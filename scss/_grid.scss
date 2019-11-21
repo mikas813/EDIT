@@ -1,0 +1,451 @@
+.grid{
+    color: #fff;
+    .container{
+        @include common_container-options;
+        .grid__inner{
+            padding-bottom: 140px;
+
+            display: flex;
+            justify-content: center;
+            .grid__column{
+                display: flex;
+                flex-wrap: wrap;
+                width: 25%;
+            }
+            .grid__item{
+                width: 100%;
+                text-align: center;
+                min-height: 295px;
+                padding: 0px 55px;
+                display: flex;
+                align-items: center;
+                h3{
+                    @include grid_title;
+                }
+                span{
+                   @include grid-subtitle;
+
+                }
+                p{
+                    @include grid_text;
+                }
+                a{
+                    display: block;
+                    font-weight: 800;
+                    font-size: 0.875em;
+                    margin-top: 22px;
+                }
+            }
+            .grid__item-1{
+                background-color: $grid_item_1-col;
+                height: $tall_box-height;
+            }
+            .grid__item-2{
+                background-color: $grid_item_2-col;
+            }
+            .grid__item-3{
+                background-color: $grid_item_3-col;
+            }
+            .grid__item-4{
+                background-color: $grid_item_4-col;
+            }
+            .grid__item-5{
+                background-color: $grid_item_5-col;
+            }
+            .grid__item-6{
+                background-color: $grid_item_6-col;
+            }
+            .grid__item-7{
+                background-color: $grid_item_7-col;
+            }
+            .grid__item-8{
+                background-color: $grid_item_8-col;
+            }
+            .grid__item-9{
+                background-color: $grid_item_9-col;
+            }
+            .grid__item-10{
+                background-color: $grid_item_10-col;
+                height: $tall_box-height;
+            }
+            .grid__item-inner-3,
+            .grid__item-inner-7{
+                position: relative;
+                &::before{
+                    position: absolute;
+                    background-image: url(../img/icons/grid_twirer-icon.png);
+                    width: 99px;
+                    height: 25px;
+                    top: -45%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    content: '';  
+                }
+            }
+            .grid__item-inner-5,
+            .grid__item-inner-9{
+                position: relative;
+                &::before{
+                    position: absolute;
+                    background-image: url(../img/icons/grid_left-arrow.png);
+                    width: 23px;
+                    height: 13px;
+                    top: -25px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    content: '';  
+                }
+            }
+
+        }
+    }
+}
+@media (max-width: 960px){
+    .grid .container .grid__inner{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .grid .container .grid__inner .grid__column {
+        width: 40%;
+        }    
+}
+@media (max-width: 770px){
+    .grid .container .grid__inner .grid__item{
+        min-height: 250px;
+    }
+    .grid .container .grid__inner .grid__item-1,
+    .grid .container .grid__inner .grid__item-10{
+        height: 500px;
+        
+    }
+    .grid .container .grid__inner .grid__item h3{
+        font-size: $S-subtitle_font-size;
+    }
+    .grid .container .grid__inner .grid__item span{
+        font-size: $main_font-size;
+    }
+    .grid .container .grid__inner .grid__item{
+        padding: 0px 25px;
+    }
+}
+@media (max-width: 770px){
+    .grid .container .grid__inner{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .grid .container .grid__inner .grid__column {
+        width: 51%;
+        } 
+        .grid .container .grid__inner .grid__item{
+            min-height: 200px;
+        }
+        .grid .container .grid__inner .grid__item-1,
+        .grid .container .grid__inner .grid__item-10{
+            height: 400px;
+            
+        }   
+        .grid .container .grid__inner .grid__item h3{
+            font-size: $S-subtitle_font-size;
+        }
+        .grid .container .grid__inner .grid__item 
+        .grid .container .grid__inner .grid__item p {
+            font-size: 0.990em;
+            line-height: 18px;
+        }
+        .grid .container .grid__inner .grid__item a{
+            margin: 10px 0 0;
+        }
+        .grid .container .grid__inner{
+            padding-bottom: 70px;
+        }
+}
+@media (max-width: 470px){
+.grid .container .grid__inner .grid__item p {
+    font-size: 0.680em;
+    line-height: 16px;
+}
+}
+
+
+
+
+
+// .grid{
+//     max-width: 1244px;
+//     background-color: $page_back_gro-col;
+//     margin: 0 auto;
+//     display: grid;
+//     .grid_inner{
+//         max-width: 1180px;
+//         position: relative;
+//         margin: 150px 35px;
+//         display: grid;
+//         grid-auto-rows: minmax(270px, auto);
+//         grid-auto-columns: minmax(300px, 300px) ;
+//         grid-template-columns: repeat(4, 1fr);
+//         color: #ffffff;
+        
+//         .grid_item-1{
+//             background-color: $grid_item_1-col;
+//             grid-column: span 1;
+//             grid-row: span 2;
+//             position: relative;
+//             .grid_1-text{
+//                 transform: translate(-50%, -50%);
+//                 position: absolute;
+//                 text-align: center;
+//                 width: 270px;                
+//                 left: 50%;
+//                 top: 50%;
+//                 h2{
+//                     font-size: 24px;
+//                     line-height: 27px;
+//                     font-family: $main_font-reg;
+//                     font-weight: bold;
+//                 }
+//                 i{
+//                     font-family: "Georgia";
+//                     line-height: 30px;
+//                     font-style: italic;
+//                     font-size: 18px;
+//                 }   
+//             }
+//         }
+//         .grid_item-2{
+//             background-color: $grid_item_2-col;
+//             position: relative;
+//             .grid_2-text{
+//                 position: absolute;
+//                 text-align: center;
+//                 width: 205px;
+//                 transform: translate(-50%, -50%);
+//                 top: 50%;
+//                 left: 50%;
+//                 span{
+//                     margin: 0 auto;
+//                     display: block;
+//                     a{
+//                         &::before{
+//                             content: '';
+//                             border-top: 1px solid #ffffff;
+//                             width: 20px;
+//                             position: absolute;
+//                             top: 15px; 
+//                             left: 30px;
+//                         }
+//                         &:after{
+//                             content: '';
+//                             border-top: 1px solid #ffffff;
+//                             width: 20px;
+//                             position: absolute; 
+//                             top: 15px; 
+//                             right: 30px;
+//                         }
+//                     }
+//                 }
+//                 i{
+//                     font-family: "Georgia";
+//                     font-style: italic;
+//                     font-size: 14px;
+//                     line-height: 19px;
+//                 }
+//                 h3{
+//                     font-family: $main_font-reg;
+//                     font-weight: bold;
+//                     font-size: 14px;
+//                     line-height: 40px;
+//                 }
+//             }
+//         }
+//         .grid_item-3{
+//             background-color: $grid_item_3-col;
+//         }
+//         .grid_item-4{
+//             background-color: $grid_item_4-col;
+//             position: relative;
+            
+//             .grid_4-text{
+//                 transform: translate(-50%, -50%);
+//                 position: absolute;
+//                 text-align: center;
+//                 width: 270px;
+//                 left: 50%;
+//                 top: 50%;
+//                 span{
+//                     margin: 0 auto;
+//                     display: block;
+//                 }
+//                 h2{
+//                     font-size: 24px;
+//                     line-height: 27px;
+//                     font-family: $main_font-reg;
+//                     font-weight: bold;
+//                     letter-spacing: 1px;
+
+//                 }
+//                 i{
+//                     font-family: "Georgia";
+//                     line-height: 30px;
+//                     font-style: italic;
+//                     font-size: 18px;
+//                 }
+//             }  
+//         }
+//         .grid_item-5{
+//             background-color: $grid_item_5-col;
+//             position: relative;
+//             .grid_5-text{
+//                 transform: translate(-50%, -50%);
+//                 position: absolute;
+//                 text-align: center;
+//                 width: 270px;
+//                 left: 50%;
+//                 top: 50%;
+//                 h2{
+//                     font-size: 24px;
+//                     line-height: 27px;
+//                     font-family: $main_font-reg;
+//                     font-weight: bold;
+//                     letter-spacing: 1px;
+
+//                 }
+//                 i{
+//                     font-family: "Georgia";
+//                     line-height: 30px;
+//                     font-style: italic;
+//                     font-size: 18px;
+//                 }
+//             }
+//         }
+//         .grid_item-6{
+//             background-color: $grid_item_6-col;
+//             text-align: center;
+//             position: relative;
+//             .grid_6-text{
+//                 transform: translate(-50%, -50%);
+//                 position: absolute;
+//                 text-align: center;
+//                 width: 65%;
+//                 left: 50%;
+//                 top: 50%;
+//                 span{
+//                     margin: 0 auto;
+//                     display: block;
+//                     a{
+//                         &::before{
+//                             content: '';
+//                             border-top: 1px solid #ffffff;
+//                             width: 20px;
+//                             position: absolute;
+//                             top: 15px; 
+//                             left: 30px;
+//                         }
+//                         &:after{
+//                             content: '';
+//                             border-top: 1px solid #ffffff;
+//                             width: 20px;
+//                             position: absolute; 
+//                             top: 15px; 
+//                             right: 30px;
+//                         }
+//                     }
+//                 }
+//                 i{
+//                     font-family: "Georgia";
+//                     font-style: italic;
+//                     font-size: 14px;
+//                     line-height: 19px;
+//                 }
+//                 h3{
+//                     font-family: $main_font-reg;
+//                     font-weight: bold;
+//                     font-size: 14px;
+//                     line-height: 40px;
+//                 }
+//             }
+            
+//         }
+//         .grid_item-7{
+//             background-color: $grid_item_7-col;
+//             grid-column: span 1;
+//             grid-row: span 2;
+//             position: relative;
+//             .grid_7-text{
+//                 transform: translate(-50%, -50%);
+//                 position: absolute;
+//                 text-align: center;
+//                 width: 270px;
+//                 left: 50%;
+//                 top: 50%;
+//                 h2{
+//                     font-size: 24px;
+//                     line-height: 27px;
+//                     font-family: $main_font-reg;
+//                     font-weight: bold;
+//                     letter-spacing: 1px;
+
+//                 }
+//                 i{
+//                     font-family: "Georgia";
+//                     line-height: 30px;
+//                     font-style: italic;
+//                     font-size: 18px;
+//                 }
+//             }
+//         }
+//         .grid_item-8{
+//             background-color: $grid_item_8-col;
+            
+//         }
+//         .grid_item-9{
+//             background-color: $grid_item_9-col;
+//             position: relative;
+//             .grid_9-text{
+//                 transform: translate(-50%, -50%);
+//                 position: absolute;
+//                 text-align: center;
+//                 width: 270px;
+//                 left: 50%;
+//                 top: 50%;
+//                 span{
+//                     margin: 0 auto;
+//                     display: block;
+//                 }
+//                 h2{
+//                     font-size: 24px;
+//                     line-height: 27px;
+//                     font-family: $main_font-reg;
+//                     font-weight: bold;
+//                     letter-spacing: 1px;
+
+//                 }
+//                 i{
+//                     font-family: "Georgia";
+//                     line-height: 30px;
+//                     font-style: italic;
+//                     font-size: 18px;
+//                 }
+//             }    
+//         }
+//         .grid_item-10{
+//             background-color: $grid_item_10-col;
+//             position: relative;
+//             .grid_10-text{
+//                 transform: translate(-50%, -50%);
+//                 position: absolute;
+//                 text-align: center;
+//                 width: 65%;
+//                 left: 50%;
+//                 top: 50%;
+//                 h2{
+//                     font-size: 22px;
+//                 }
+//                 i{
+//                     font-style: italic;
+//                     line-height: 30px;
+//                     font-size: 18px;
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -1,0 +1,174 @@
+//variables 
+    //font
+
+        //font family
+            $main_font: 'Lato', Sans-serif;
+            $secondary_font: 'Georgia', Sans-serif;
+        //==/font family
+
+        //==font colors
+            $main_font-color: #303030; 
+            $secondary_font-color: rgb(96, 96, 96);
+            $border_color: #959595;   
+            $check_btn_font-color: rgb(48, 48, 48);
+        //==/font colors
+
+        /*
+        font-size in px
+        14px=0.875em
+        16px=1em
+        18px=1.125em
+        24px=1.5em
+        32px=2em
+        36px=2.25em
+        52px=3.25em
+        72px=4.5em
+        */
+      
+        //==font sizes
+            
+            $main_font-size: 1em;
+            $header-footer_font-size: 0.875em;
+        
+            $S-subtitle_font-size: 1.125em;
+            $M-subtitle_font-size: 1.5em;
+            $L-title_font-size: 2.25em;
+            $XL-title_font-size: 3.25em;
+            $XXL-title_font-size: 4.5em;
+        //==/font sizes
+    //==font
+
+    
+    //site colors
+        //main colors
+            $main_back_gro-col: #e5e5e5;
+            $border-color: #959595;
+            $container-color: #fff;
+        //==main colors
+
+        //grid items colors
+            $grid_item_1-col: #d2d2d2;
+            $grid_item_2-col: #bbbbbb;
+            $grid_item_3-col: #dbdbdb;
+            $grid_item_4-col: #606060;
+            $grid_item_5-col: #cacaca;
+            $grid_item_6-col: #bbbbbb;
+            $grid_item_7-col: #d7d7d7;
+            $grid_item_8-col: #c2c2c2;
+            $grid_item_9-col: #606060;
+            $grid_item_10-col: #d0d0d0;
+        //grid items colors
+   
+        //button colors
+            $btn_color: #f68236;
+            $btn_border-color: #e67429;
+        //button colors
+    //==/site colors
+    
+    //site sizes
+        //GRID BOX SIZE
+            $box-width: 295px;
+            $tall_box-height: 590px;  
+            $box-height: 295px;
+        //==GRID BOX SIZE
+    //==site sizes      
+//==/variables
+
+//mixins
+    @mixin common_container-options{
+        max-width: 1244px;
+        padding: 0px 22px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    //Header
+    @mixin header_menu-text {
+        font-family: $main_font;
+        font-size: $header-footer_font-size;    
+        color: $main_font-color; 
+        letter-spacing: .5px;
+    }
+    //Main slider
+    @mixin main_title-options {
+        color: $main_font-color;
+        font-family: $main_font;
+        font-size: $XXL-title_font-size;
+        line-height: 120px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    @mixin subtitle_options {
+        font-family: $secondary_font;
+        font-size: $M-subtitle_font-size;
+        color: $secondary_font-color;
+        font-style: italic;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+    //==Main slider
+
+    //grid text
+    @mixin grid-title {
+        font-family: $main_font;
+        font-size: $M-subtitle_font-size;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 27px;
+        letter-spacing: 1px;
+    }
+    @mixin grid-subtitle {
+        font-size: $S-subtitle_font-size;
+        font-family: $secondary_font;
+        font-style: italic;
+        line-height: 27px;
+        line-height: 27px;
+    }
+    @mixin grid_text {
+        font-family: $secondary_font;
+        font-size: 0.875em;
+        line-height: 19px;
+    }
+    //==grid text
+
+    //Newsletter
+    @mixin newsletter_title {
+        text-transform: uppercase;
+        font-family: $main_font;
+        color: $main_font-color;
+        font-size: $L-title_font-size;
+        font-weight: bold;
+        text-align: center;
+        line-height: 35px;
+    }
+    @mixin newsletter_subtitle {
+        color: $main_font-color;
+        font-family: $secondary_font;
+        font-style: italic;
+        font-size: 1.125em;
+        line-height: 35px;
+        text-align: center;
+    }
+    @mixin check_btn-options {
+        font-family: $main_font-reg;
+        font-size:  $header-footer_font-size;
+        color: $main_font-color;
+        font-weight: 100; 
+    }
+    //==Newsletter
+
+   
+    /*Secondary navigation buttons above title of category pages!
+     exmp "HOME / MEN"*/
+    @mixin secondary_nav-btn{
+        color: $main_font-color;
+        font-family: $main_font-reg;
+        font-size: $header-footer_font-size;
+    }
+//==/mixins
+
+
+
+     
+
+
+

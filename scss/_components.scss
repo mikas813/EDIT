@@ -1,0 +1,36 @@
+// //Main slider Button!
+
+.title__button{
+    margin-bottom: 35px;
+    position: relative;
+    margin-top: 65px;
+    display: inline-block;
+    // font-size: ;
+    width: 230px;
+    height: 65px;
+    border: 1px solid $border-color;
+    &:hover{
+        transition: all .3s;
+        border: 1px solid $btn_border-color;
+        background-color: $btn_color;
+        color: #fff;
+    }
+    a{
+        min-width: 180px;
+        position: absolute;
+        display: block;
+        text-transform: uppercase;
+        font-size: 0.875em;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media (max-width: 770px){
+.title__button{
+width: 175px;
+height: 40px;
+font-size: 0.875em;
+}
+}
+

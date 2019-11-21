@@ -1,0 +1,141 @@
+// .basket_inner{
+//     position: relative;
+//     background-color: $page_back_gro-col;
+//     font-family: $main_font-reg;
+//     color: $main_font-color;
+//     margin:  auto;
+//     max-width: 1244px;
+//     .top_info-text {
+//         max-width: 1180px;
+//         margin: 0 auto;
+//         display: flex;
+//         justify-content: space-between;
+//         padding: 100px 0 14px;
+//         .left_side {
+//             display: flex;
+//             .name_product-inner{
+//                 min-width: 125px;
+//             }
+//             .name_description-inner{
+//                 min-width: 240px;
+//             }
+//         }
+//         .right_side {
+//             display: flex;
+//             .name_color-inner{
+//                 min-width: 180px;
+//             }
+//             .name_size-inner{
+//                 min-width: 100px;
+//             }
+//             .name_qty-inner{
+//                 min-width: 100px;
+//             }
+//             .name_amount-inner{
+//                 min-width: 100px;
+//             }
+//         }
+//     }
+//     .checkout_item-table {
+//         max-width: 1180px;
+//         margin: 0 auto;
+            
+//         }
+//         .item_details {
+//             border-top: 1px solid $border_color;
+//             justify-content: space-between;
+//             display: flex;
+//             &:hover{
+//                 background-color: #f9f9f9;
+//             }
+//             .left_side {
+//                 padding: 19px 0 19px;
+//                 display: flex;
+//                 .item_info-img {
+//                     min-width: 125px;
+//                     img{
+//                         width: 100px;
+//                         height: 100px;
+//                     }
+//                 }
+//                 .item_detail_name-id {
+//                     display: flex;
+//                     align-items: center;
+//                     min-width: 240px;
+//                 }
+//             }
+//             .right_side {
+//                 padding: 19px 0 19px;
+
+//                 display: flex;
+//                 .info_color{
+//                     min-width: 180px;
+//                     display: flex;
+//                     align-items: center;
+//                 }
+//                 .info_size{
+//                     min-width: 100px;
+//                     display: flex;
+//                     align-items: center;
+//                 }
+//                 .info_qty{
+//                     min-width: 100px;
+//                     display: flex;
+//                     align-items: center;
+//                 }
+//                 .info_price{
+//                     min-width: 100px;
+//                     display: flex;
+//                     align-items: center;
+//                 }
+//             }
+//         }
+//         .basket_bottom-buttons{
+//             padding: 45px 0 125px;
+//             max-width: 1180px;
+//             margin: 0 auto;
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             a{
+//                 text-decoration: underline;
+//             }
+//             button{
+//                 border: 1px solid #e67429;
+//                 -webkit-appearance: none;
+//                 background-color: #f68236;
+//                 color: #ffffff;
+//                 appearance: none;
+//                 text-align: center;
+//                 display: block;
+//                 height: 50px;
+//                 width: 195px;
+//                 font-size: 14px;
+//                 line-height: 42px;
+
+//             }
+            
+//         }
+//         .detail_total{
+//             border-top: 1px solid $border_color;
+
+//             padding-top: 4px;
+//             background-color: #f9f9f9;
+//             height: 60px;
+//             align-items: center;
+//             display: flex;
+//             margin: 0 auto;
+//             max-width: 1180px;
+//             justify-content: flex-end;
+//             .subtotal_price{
+                
+//                 min-width: 100px;
+//                 color: #f68236;
+//             }
+//             .subtotal_label{
+//                 min-width: 100px;
+
+//             }
+//         }
+
+//     }

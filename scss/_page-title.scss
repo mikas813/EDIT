@@ -1,0 +1,89 @@
+.page__title{
+    .container{
+        @include common_container-options;
+        .title__inner{
+            padding: 115px 0px;
+            margin: 0px 10px;
+            text-align: center;
+            h2{
+                @include main_title-options;
+            }
+            p{
+                @include subtitle_options;
+            }   
+        }
+    }
+}
+@media (max-width: 960px){
+    .page__title .container .title__inner h2{
+            font-size: $XL-title_font-size;
+        }
+}
+@media (max-width: 770px){
+    .page__title .container .title__inner h2{
+    font-size: $L-title_font-size;
+    }
+    .page__title .container .title__inner p{
+        font-size: $S-subtitle_font-size;
+    }
+    .page__title .container .title__inner{
+        padding: 70px 0px;
+    }
+}
+@media (max-width: 540px){
+    .page__title .container .title__inner h2{
+        font-size: $M-subtitle_font-size;
+        line-height: 60px;
+        }
+        .page__title .container .title__inner p{
+            font-size: $main_font-size;
+
+        }
+        .page__title .container .title__inner{
+            padding: 600px 0px;
+        } 
+        @media (max-width: 540px){
+            .page__title .container .title__inner h2{
+                font-size: $S-subtitle_font-size;
+                line-height: 60px;
+                }
+                .page__title .container .title__inner p{
+                    font-size: 0.875em;
+        
+                }
+                .page__title .container .title__inner{
+                    padding: 50px 0px;
+                } 
+        }
+}
+
+
+
+
+
+
+
+
+
+// .hero_inner{
+//     position: relative;
+//     max-width: 1244px;
+//     background-color: $page_back_gro-col;
+//     margin: 0 auto;
+//     .hero_title{
+//         @include main_title-options;
+//         padding: 150px 0 35px;
+//         text-align: center;
+//         letter-spacing: 3px;
+//         margin: 0 auto;
+//         max-width: 904px;
+//     }        
+//     .hero_subtitle{
+//         @include subtitle_options; 
+//         text-align: center;
+//         max-width: 780px;
+//         padding-bottom: 70px;
+//         margin: 0 auto;
+//     }
+// }
+
