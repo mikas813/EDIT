@@ -34,8 +34,7 @@
                 right: 4px;
                 border: 1px solid #e67429;
                 background-color: #f68236;
-                -moz-appearance: none;
-                -webkit-appearance: none;
+               @include button-reset;
             }
         }
     }
