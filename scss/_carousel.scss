@@ -29,7 +29,7 @@
                 &::before{
                     content: '';
                     font-size: 0;
-                    background-image: url(../img/icons/carousel_right-arrow.svg);
+                    background-image: url(../images/icons/carousel_right-arrow.svg);
                     height: 33px;
                     width: 17px;
                     right: 10px;
@@ -43,7 +43,7 @@
                 &::before{
                     content: '';
                     font-size: 0;
-                    background-image: url(../img/icons/carousel_left-arrow.svg);
+                    background-image: url(../images/icons/carousel_left-arrow.svg);
                     height: 33px;
                     width: 17px;
                     left: 10px;
@@ -92,152 +92,3 @@
 }
 
 
-// .carousel__arrow{
-//             height: 120px;
-//             width: 40px;
-//             display: block;
-//             position: relative;
-//             &:hover{
-//                 opacity: .6;
-//             }
-//             }
-//             .left__arrow{
-//                 left: 0;
-//                 background-color: #bbbbbb;
-//                 &::before{
-//                     position: absolute;
-//                     content: '';
-//                     width: 17px;
-//                     height: 33px;   
-//                     left: 10px;
-//                     top: 50%;
-//                     transform: translateY(-50%);
-//                     background-image: url(../img/icons/carousel_left-arrow.svg);
-//                 }
-                
-//             }
-//             .right__arrow{
-//                 right: 0;
-//                 background-color: #bbbbbb;
-//                 &::before{
-//                     position: absolute;
-//                     content: '';
-//                     width: 17px;
-//                     height: 33px;   
-//                     right: 10px;
-//                     top: 50%;
-//                     transform: translateY(-50%);
-//                     background-image: url(../img/icons/carousel_right-arrow.svg);
-//                 }
-//             }
-
-
-
-
-
-
-
-// .carousel{
-//     position: relative;  
-//     margin: 0 auto;  
-//     max-width: 1244px;
-//     padding: 1px;
-//     background-color: $page_back_gro-col;
-//     .slider_wrapper{
-//         min-height: 120px;
-//         max-width: 1180px;
-//         margin: 0 auto;
-//         display: flex;
-//         justify-content: space-around;
-//         align-items: center;
-//         background-color: #909090;
-//         .slider{
-//             height: 100px;
-//             background-color: #fff;
-//             width: 120px;
-//         }
-//     }
-// }
-            
-
-
-// // .carousel{
-// //     background-color: $page_back_gro-col;
-// //     position: relative;  
-// //     margin: 0 auto;  
-// //     height: 300px;
-// //     max-width: 1244px;
-// //     padding: 1px;
-// //     &:before{
-// //         content: '';
-        
-// //     border-bottom: 1px solid $border-color;
-// //     position: absolute;
-// //     top: 0px;
-// //     width: 94%;
-// //     left: 3%;
-// //     }
-// //     h2{
-// //         color: #606060;
-// //         font-style: italic;
-// //         font-family: $subtitle_font;
-// //         font-size: 26px;
-// //         position: absolute;
-// //         top: 10%;
-// //         left: 50%;
-// //         transform: translateX(-50%);
-        
-       
-// //     }
-// //     .carousel_inner{
-// //         margin: 100px 35px 60px 35px;
-// //         background-color: #bbbbbb;
-// //         position: relative;
-// //         display: flex;
-// //         height: 120px;
-// //         display: flex;
-// //         .carousel_items{
-// //             display: block;
-// //             min-height: 100px;
-// //             max-width: 1000px;
-// //             background-color: #909090;
-// //         }
-// //        }
-// //         .carousel_right-btn{
-// //             &:hover{
-// //             background-color: #e4e4e4;
-// //             position: relative;
-// //             height: 100%;
-// //             width: 40px;
-// //             }
-// //             &:before{
-// //                 content: '\e904';
-// //                 font-family: 'icomoon';
-// //                 position: absolute;
-// //                 color: #ffffff;
-// //                 font-size: 40px;
-// //                 left: 0px;
-// //                 top: 50%;
-// //                 transform: translateY(-50%);
-// //             }
-// //         }
-// //         .carousel_left-btn{
-// //             &:hover{
-// //             background-color: #e4e4e4;
-// //             position: absolute;
-// //             height: 100%;
-// //             width: 40px;
-// //             right: 0px;
-// //             }
-// //             &:after{
-// //                 content: '\e900';
-// //                 font-family: 'icomoon';
-// //                 position: absolute;
-// //                 color: #ffffff;
-// //                 font-size: 40px;
-// //                 right: 0px;
-// //                 top: 50%;
-// //                 transform: translateY(-50%);
-// //             }
-// //         }
-// // }
